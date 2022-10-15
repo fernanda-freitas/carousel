@@ -1,0 +1,98 @@
+@keyframes fadeToBottom {
+  0%   {top: -30px; opacity: 0;}
+  100%   {top: 0px; opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0%   {opacity: 0;}
+  100%   {opacity: 1;}
+}
+
+@keyframes growToRight {
+  0% {width: 0%;}
+  50% {width: 100%;}
+  100% {width: 100%;}
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #1e1e26;
+  margin: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.content {
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.content-tabs {
+  position: absolute;
+  z-index: 10;
+  top: 12%;
+  left: 10%;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 3rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.active.button::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  content: '';
+  border-bottom: 3px solid white;
+  background: white;
+  width: 100%;
+  animation-name: growToRight;
+  animation-duration: 2s;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.content-text {
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  max-width: 600px;
+  z-index: 100;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+img {
+  position: relative;
+  transform: scale(1.1);
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  animation-name: fadeToBottom;
+  animation-duration: 1.5s;
+}
+
+h4 {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0rem;
+  font-weight: 400;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}

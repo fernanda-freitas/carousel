@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radio app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <div class="content-tabs">
+        <button id="tab-01" onclick="showTabContent('content-01'), activateButton()" class="button">Observations</button>
+        <button id="tab-02" onclick="showTabContent('content-02'), activateButton()" class="button">Mission</button>
+        <button id="tab-03" onclick="showTabContent('content-03'), activateButton()" class="button">Stories</button>
+      </div>
+      <div id="content-01" class="content">
+        <div class="content-text">
+          <h4 class="headline">Luminous events</h4>
+          <h1 class="page-title">Astronomers around the world are captivated by an unusually bright and long-lasting pulse of radiation</h1>
+        </div>
+        <img id="background-image" src="images/image-01.webp" alt="image background">
+      </div>
+      <div id="content-02" class="content">
+        <div class="content-text">
+          <h4 class="headline">Mars samples</h4>
+          <h1 class="page-title">Mars Perseverance Return is a multi-mission campaign designed to retrieve samples</h1>
+        </div>
+        <img id="background-image" src="images/image-05.jpg" alt="image background">
+      </div>
+      <div id="content-03" class="content">
+        <div class="content-text">
+          <h4 class="headline">Astronomical phenomena</h4>
+          <h1 class="page-title">Earth Observatory has published more than 15,000 image-driven stories</h1>
+        </div>
+        <img id="background-image" src="images/image-03.jpg" alt="image background">
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
