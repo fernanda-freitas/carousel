@@ -112,16 +112,16 @@ h1 {
   }
 
   .button {
-    padding-right: .5rem;
-    font-size: .875rem;
+    padding-right: 1rem;
+    font-size: 1rem;
   }
 
   h4 {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     hyphens: none
   }
 }
