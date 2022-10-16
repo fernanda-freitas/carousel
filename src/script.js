@@ -39,4 +39,4 @@ setInterval( () => {
     index = 1
   }
   index ++
-}, 4000)
+}, 3000)
